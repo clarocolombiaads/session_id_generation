@@ -14,7 +14,7 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 LOCAL_TZ = ZoneInfo("America/Bogota")
 SESSION_DURATION_MS = 28500000
-SESSION_DURATION_HOURS = 3600000/SESSION_DURATION_MS  # expira en 1 hora
+SESSION_DURATION_HOURS = SESSION_DURATION_MS / (1000 * 60 * 60)    # expira en 1 hora
 
 
 # Middleware CORS
