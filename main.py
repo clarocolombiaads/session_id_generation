@@ -20,7 +20,7 @@ SESSION_DURATION_HOURS = 3600000/SESSION_DURATION_MS  # expira en 1 hora
 # Middleware CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://tienda.claro.com.co"],
+    allow_origins=["https://tienda.claro.com.co", "https://tienda.claro.com.co/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
